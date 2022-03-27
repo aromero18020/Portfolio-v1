@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Romero</title>
+     <!--linking custom css-->
+     <link href="Resources/CSS/custom.css" rel="stylesheet" type="text/css">
+     <link href="Resources/CSS/styles.css"rel="stylesheet" type="text/css">
+    <!-- Linking Bootstrap-->
+    <link href="Resources/CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Linking Webkit-->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <!-- Linking Javascript for Animated Sphere-->
+    <script src="Resources/Javascript/quote.js"></script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#practice">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+     <!-- main banner -->
+     <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Andres Romero</h2>
+                <p class="hero_desc">Aspiring Full Stack Developer and Tech Enthusiast</p>
+            </div>
+            </div>
+        </div>
+        <div class="quote">
+            <h2>The Best Way To Predict The Future Is To Invent It.</h2>
+            <p>- Alan Kay</p>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="Resources/Images/andrepfp.jpg" class= "imageAboutPage" alt="Portrait of Andres">
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                        <p><span class="hello-world">&lt Hello World!&gt</span> My name is Andres, I am a current leasing coordinator for a property management company in Utah with a strong desire and eagerness to continue to learn and develop my passions and hobbies.</p>
+                            
+                            <p>I took it upon myself to sit down and learn how to code as I have always been the curious type, wanting to know how everything was made to operate and come together. Even through the struggles to understand some concepts I am staying motivated and continuing to teach myself new topics daily.</p>
+
+                            <p> I am excited to continue learning to code and I am looking forward to bringing my ideas to life! Follow me along on this journey!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Skills-->
+    <span class="Sphere"></span>
+
+    <!-- Including the TagCloud.js script CDN in the document    -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'HTML', 'CSS', 'JavaScript', 'Git', 'React', 'GitHub'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 200,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'fast',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 125,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: false
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#FFD858 ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
+
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="Resources/Images/Sage-Cafe.gif" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Sage Cafe</h4>
+                            <p class="card-text">A fictional Cafe's Homepage</p>
+                            <div class="text-center">
+                                <a href="https://aromero18020.github.io/Sage-Cafe/" target="_blank" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="Resources/Images/Joke Generator.gif" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Joke Generator</h4>
+                            <p class="card-text">A Joke Generator that tells some of the most cringe dad jokes</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"></h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"></h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"></h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"></h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <br>
+    <br>
+
+    <!-- Practice Projects section-->
+    <section id="practice">
+        <div class="container">
+            <h1 class="text-center">Practice Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3"></h4>
+                            <p class="card-text mt-3">
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3"></h4>
+                            <p class="card-text mt-3">
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3"></h4>
+                            <p class="card-text mt-3">
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3"></h4>
+                            <p class="card-text mt-3">
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3"></h4>
+                            <p class="card-text mt-3">
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3"></h4>
+                            <p class="card-text mt-3">
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/search?q=utah&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- footer section-->
+     <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/in/andres-romero-4824791a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/aromero18020" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
