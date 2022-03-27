@@ -1,6 +1,6 @@
 # Personal Portfolio
 > This is a personal portfolio site to give a overview of my skills and projects. 
-> Live:
+> Live:  https://aromero18020.github.io/Portfolio/
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -39,8 +39,8 @@ Project is: _in progress_
 ## Room for Improvement
 
 Room for improvement:
-- 
-- 
+- Work on interactivity using Javascript
+- More visually pleasing hover states
 
 To do:
 - Add more interactivity to site.
